@@ -18,3 +18,13 @@ Proyecto educativo de Ingeniería de Datos que implementa una **arquitectura Med
 - **Datos**: empleados.csv, locales.csv, producto.csv, fact.csv.
 
 - **Dónde**: Databricks CE. Notebooks: 01_bronze_ingestion, 02_silver_transformation, 03_gold_aggregations.
+
+## 🧪 Datasets (campos clave)
+
+- **empleados.csv**: id_vendedor, sucursal, nombre
+
+- **locales.csv**: id_sucursal, nombre, tipo
+
+- **producto.csv**: id_producto, nombre, familia, precio_unitario
+
+- **fact.csv**: timestamp/fecha, sku(=id_producto), vendedor(=id_vendedor), cantidad
