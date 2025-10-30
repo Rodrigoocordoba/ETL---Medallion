@@ -12,8 +12,9 @@ Proyecto educativo de Ingeniería de Datos que implementa una **arquitectura Med
 
 ## 🗺️ Visión general
 
-```mermaid
-flowchart LR
-  A[Archivos CSV] --> B[Bronze  \n raw_empleados/raw_producto/raw_locales/raw_ventas]
-  B --> C[Silver \n dim_vendedor / dim_producto / fact_ventas]
-  C --> D[Gold \n fact_ventas_final \n (particionada por mes + monto_total)]
+
+- **Objetivo**: pipeline de punta a punta con buenas prácticas (idempotencia, limpieza, controles, particiones).
+
+- **Datos**: empleados.csv, locales.csv, producto.csv, fact.csv.
+
+- **Dónde**: Databricks CE. Notebooks: 01_bronze_ingestion, 02_silver_transformation, 03_gold_aggregations.
